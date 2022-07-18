@@ -122,12 +122,11 @@ ${response.license}`;
     
     fs.writeFile("./README.md", content, err => {
         if (response.license == "MIT") {
-            prepend("README.md", " MIT LICENSE BADGE", err => {
+            prepend("README.md", "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)", err => {
                 if (err) {
                     console.error(err);
                 }
             })
-            console.log("MIT LICENSE SELECTED")
         }
 
         if (err) {

@@ -1,4 +1,4 @@
- MIT LICENSE BADGE
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # sdf
 
 sdf
@@ -19,7 +19,7 @@ sdf
 
 ## Usage
 
-sdf
+sfd
 
 
 ## Credits
@@ -36,7 +36,7 @@ sdf
 
 ### Why was this built?
 
-sdf
+sfd
 
 ###  What problem does it solve?
 
@@ -44,9 +44,9 @@ sfd
 
 ### What is your contact information?
 
-[GitHub Profile](https://github.com/sdf)
+[GitHub Profile](https://github.com/sfd)
 
-If you have additional questions, please email me at sdf.
+If you have additional questions, please email me at sf.
 
 ## License
 
