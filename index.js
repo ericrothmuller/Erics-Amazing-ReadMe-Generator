@@ -85,6 +85,14 @@ ${response.description}
 
 ${response.install}
 
+## Table Of Contents
+
+- [Usage](#usage)
+- [Credits](#credits)
+- [Tests](#tests)
+- [Questions](#questions)
+- [License](#license)
+
 
 ## Usage
 
