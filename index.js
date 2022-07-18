@@ -1,5 +1,6 @@
  const inquirer = require("inquirer");
  const fs = require("fs");
+ const prepend = require("prepend");
  
  inquirer
  .prompt([
@@ -63,19 +64,6 @@
  .then ((response) => {
     console.log(response);
 
-    response.title;
-    response.description;
-    response.install;
-    response.use;
-    response.license;
-    response.contributions;
-    response.tests;
-    response.whybuild;
-    response.username;
-    response.email;
-    response.problem;
-
-
 var content = `# ${response.title}
 
 ${response.description}
@@ -132,7 +120,16 @@ ${response.license}`;
 
 
     
-    fs.writeFile("./test123.md", content, err => {
+    fs.writeFile("./README.md", content, err => {
+        if (response.license == "MIT") {
+            prepend("README.md", " MIT LICENSE BADGE", err => {
+                if (err) {
+                    console.error(err);
+                }
+            })
+            console.log("MIT LICENSE SELECTED")
+        }
+
         if (err) {
             console.error(err);
         }
