@@ -1,4 +1,5 @@
  const inquirer = require("inquirer");
+ const fs = require("fs");
  
  inquirer
  .prompt([
@@ -35,10 +36,57 @@
     },
     {
         type: "input",
-        message: "What type of license does your project have?",
-        name: "license",
+        message: "Write a test for your application and then provide an example on how to run it.",
+        name: "tests",
+    },
+    {
+        type: "input",
+        message: "Why did you build this project?",
+        name: "whybuild",
+    },
+    {
+        type: "input",
+        message: "What is your GitHub Username?",
+        name: "username",
+    },
+    {
+        type: "input",
+        message: "What is your email address?",
+        name: "email",
     },
  ])
  .then ((response) => {
-    console.log(response)
+    console.log(response);
+
+    response.title;
+    response.description;
+    response.install;
+    response.use;
+    response.license;
+    response.contributions;
+    response.tests;
+    response.whybuild;
+    response.username;
+    response.email;
+
+
+var content = `** ${response.title}
+
+* TEST
+
+${response.description}
+
+* TEST 2 <br />
+TEST<br />
+
+TEST TEST`;
+
+
+    
+    fs.writeFile("./test123.md", content, err => {
+        if (err) {
+            console.error(err);
+        }
+    })
+
  });
