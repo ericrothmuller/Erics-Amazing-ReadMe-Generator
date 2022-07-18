@@ -19,7 +19,7 @@ Please go to GitHub.com/ericrothmuller/erics-amazing-readme-generator and downlo
 
 ## Usage
 
-Use it by running node index.js within the terminal (must have node installed) and then answer the prompts to generate a ReadMe file.
+Use it by running node index.js within the terminal (much have node installed) and then answer the prompts to generate a ReadMe file.
 
 
 ## Credits

@@ -62,7 +62,6 @@
     },
  ])
  .then ((response) => {
-    console.log(response);
 
 var content = `# ${response.title}
 
