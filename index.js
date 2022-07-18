@@ -15,7 +15,7 @@
     },
     {
         type: "input",
-        message: "How would someone install their project?",
+        message: "How would someone get started and install this project?",
         name: "install",
     },
     {
@@ -46,6 +46,11 @@
     },
     {
         type: "input",
+        message: "What problem does this solve?",
+        name: "problem",
+    },
+    {
+        type: "input",
         message: "What is your GitHub Username?",
         name: "username",
     },
@@ -68,18 +73,54 @@
     response.whybuild;
     response.username;
     response.email;
+    response.problem;
 
 
-var content = `** ${response.title}
-
-* TEST
+var content = `# ${response.title}
 
 ${response.description}
 
-* TEST 2 <br />
-TEST<br />
 
-TEST TEST`;
+## Getting Started and Installing Guide
+
+${response.install}
+
+
+## Usage
+
+${response.use}
+
+
+## Credits
+
+${response.contributions}
+
+
+## Tests
+
+${response.tests}
+
+
+## Questions
+
+### Why was this built?
+
+${response.whybuild}
+
+###  What problem does it solve?
+
+${response.problem}
+
+### What is your contact information?
+
+[GitHub Profile](https://github.com/${response.username})
+
+If you have additional questions, please email me at ${response.email}.
+
+## License
+
+
+${response.license}`;
 
 
     
